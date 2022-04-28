@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(/images/bg-intro-mobile.png);
+  background-color: #ff7a7a;
+}
+
+main .learn-code {
+  padding-top: 75px;
+  inline-size: 320px;
+  margin: auto;
+}
+
+main .learn-code h1 {
+  color: white;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+main .learn-code p {
+  color: white;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: small;
+  white-space: pre-wrap;
+}
+
+main .login {
+  padding-top: 25px;
+  text-align: center;
+}
+
+main .login .free-trial {
+  max-width: 290px;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+main .login .free-trial p {
+  color: white;
+  background-color: #6055a5;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: small;
+  background-image: none;
+  line-height: 20px;
+}
+
+main .login .free-trial p a {
+  font-weight: 600;
+  background-color: #6055a5;
+  background-image: none;
+  text-decoration: none;
+  color: white;
+}
+
+main .login .data {
+  border-radius: 10px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  width: 320px;
+}
+
+main .login .data input {
+  height: 45px;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}

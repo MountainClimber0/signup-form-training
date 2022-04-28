@@ -1,0 +1,94 @@
+// root
+//### Primary.
+
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+
+//### Accent
+
+$Blue: hsl(248, 32%, 49%);
+
+//### Neutral
+
+$Dark-Blue: hsl(249, 10%, 26%);
+$Grayish-Blue: hsl(246, 25%, 77%);
+
+//screen size
+$Mobile: 375px;
+$Desktop: 1440px;
+
+// end of roots
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url(/images/bg-intro-mobile.png);
+  background-color: $Red;
+}
+main {
+  .learn-code {
+    padding-top: 75px;
+    inline-size: 320px;
+    margin: auto;
+    h1 {
+      color: white;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+    }
+    p {
+      color: white;
+      font-weight: 400;
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      font-size: small;
+      white-space: pre-wrap;
+    }
+  }
+  .login {
+    padding-top: 25px;
+    text-align: center;
+    .free-trial {
+      max-width: 290px;
+      margin: auto;
+      padding-bottom: 15px;
+
+      p {
+        color: white;
+        background-color: $Blue;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: small;
+        background-image: none;
+        line-height: 20px;
+        a {
+          font-weight: 600;
+          background-color: $Blue;
+          background-image: none;
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    .data {
+      border-radius: 10px;
+      margin: auto;
+      display: flex;
+      padding: 20px;
+      background-color: white;
+      flex-direction: column;
+      gap: 8px;
+      width: 320px;
+      input {
+        height: 45px;
+        border: solid 1px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+   
+      }
+    }
+  }
+}
