@@ -78,8 +78,60 @@ main .login .data {
   width: 320px;
 }
 
+main .login .data :focus {
+  background-image: none;
+}
+
+main .login .data :not(:placeholder-shown) {
+  background-image: none;
+}
+
+main .login .data :placeholder-shown {
+  border-color: #ff7a7a;
+  border-width: 2px;
+}
+
+main .login .data ::-webkit-input-placeholder {
+  font-weight: 600;
+}
+
+main .login .data :-ms-input-placeholder {
+  font-weight: 600;
+}
+
+main .login .data ::-ms-input-placeholder {
+  font-weight: 600;
+}
+
+main .login .data ::placeholder {
+  font-weight: 600;
+}
+
 main .login .data input {
   height: 45px;
   border: solid 1px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  padding-left: 15px;
+  background-image: url(/images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 240px;
+}
+
+main .login .data #button {
+  color: white;
+  background-color: #38cc8c;
+  border-style: none;
+  -webkit-box-shadow: 5px 5px 3px -3px #38cc8c;
+          box-shadow: 5px 5px 3px -3px #38cc8c;
+  font-weight: 600;
+}
+
+main .login .data p {
+  font-size: small;
+  color: #b9b6d3;
+}
+
+main .login .data p span {
+  color: #ff7a7a;
+  font-weight: bolder;
 }

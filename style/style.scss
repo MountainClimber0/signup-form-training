@@ -83,11 +83,45 @@ main {
       flex-direction: column;
       gap: 8px;
       width: 320px;
+
+      :focus {
+        background-image: none;
+      }
+
+      :not(:placeholder-shown) {
+        background-image: none;
+      }
+      :placeholder-shown {
+        border-color: $Red;
+        border-width: 2px;
+      }
+
+      ::placeholder {
+        font-weight: 600;
+      }
       input {
         height: 45px;
         border: solid 1px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
-   
+        padding-left: 15px;
+        background-image: url(/images/icon-error.svg);
+        background-repeat: no-repeat;
+        background-position: 240px;
+      }
+      #button {
+        color: white;
+        background-color: $Green;
+        border-style: none;
+        box-shadow: 5px 5px 3px -3px $Green;
+        font-weight: 600;
+      }
+      p {
+        font-size: small;
+        color: $Grayish-Blue;
+        span {
+          color: $Red;
+          font-weight: bolder;
+        }
       }
     }
   }
