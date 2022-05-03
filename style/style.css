@@ -11,10 +11,33 @@ body {
   background-color: #ff7a7a;
 }
 
+@media screen and (min-width: 1440px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+}
+
 main .learn-code {
   padding-top: 75px;
   inline-size: 320px;
   margin: auto;
+}
+
+@media screen and (min-width: 1440px) {
+  main .learn-code {
+    margin: 0;
+    inline-size: 500px;
+    padding: 0;
+  }
 }
 
 main .learn-code h1 {
@@ -22,6 +45,15 @@ main .learn-code h1 {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  main .learn-code h1 {
+    font-size: 40px;
+    text-align: start;
+    line-height: 45px;
+    padding-bottom: 25px;
+  }
 }
 
 main .learn-code p {
@@ -33,15 +65,35 @@ main .learn-code p {
   white-space: pre-wrap;
 }
 
+@media screen and (min-width: 1440px) {
+  main .learn-code p {
+    text-align: start;
+    font-size: 15px;
+    white-space: normal;
+  }
+}
+
 main .login {
   padding-top: 25px;
   text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  main .login {
+    padding: 0;
+  }
 }
 
 main .login .free-trial {
   max-width: 290px;
   margin: auto;
   padding-bottom: 15px;
+}
+
+@media screen and (min-width: 1440px) {
+  main .login .free-trial {
+    max-width: 435px;
+  }
 }
 
 main .login .free-trial p {
@@ -68,14 +120,14 @@ main .login .data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px;
+  padding: 25px;
   background-color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 8px;
-  width: 320px;
+  gap: 15px;
+  width: calc(95% - 25px);
 }
 
 main .login .data :focus {
@@ -112,9 +164,10 @@ main .login .data input {
   border: solid 1px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding-left: 15px;
+  width: 100%;
   background-image: url(/images/icon-error.svg);
   background-repeat: no-repeat;
-  background-position: 240px;
+  background-position: 95% 50%;
 }
 
 main .login .data #button {
@@ -129,6 +182,12 @@ main .login .data #button {
 main .login .data p {
   font-size: small;
   color: #b9b6d3;
+}
+
+@media screen and (min-width: 1440px) {
+  main .login .data p {
+    font-size: 14px;
+  }
 }
 
 main .login .data p span {
