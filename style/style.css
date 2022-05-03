@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(/images/bg-intro-mobile.png);
+  background-image: url(images/bg-intro-mobile.png);
   background-color: #ff7a7a;
 }
 
@@ -165,7 +165,7 @@ main .login .data input {
   border-radius: 5px;
   padding-left: 15px;
   width: 100%;
-  background-image: url(/images/icon-error.svg);
+  background-image: url(images/icon-error.svg);
   background-repeat: no-repeat;
   background-position: 95% 50%;
 }
